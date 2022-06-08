@@ -1,13 +1,15 @@
-module dff(
-  input clk, reset,
-  input d,
-  output reg q
-);
-  
+module dff 
+  #(parameter rst_value = 0)
+  (
+    input clk, reset,
+    input d,
+    output reg q
+  );
+ 
   always @ (posedge clk)
     begin
       if (reset)
-        q<=0;
+        q<=rst_value;
       else
         q<=d;
     end
