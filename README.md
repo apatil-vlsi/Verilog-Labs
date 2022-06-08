@@ -1,1 +1,1 @@
-# VSD_eSim_Workshop
+# Verilog Labs
