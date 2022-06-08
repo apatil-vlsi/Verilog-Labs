@@ -1,7 +1,7 @@
 module register_4b(
   input clk, reset,
   input [3:0] reg_in,
-  output [3:0] reg_out,
+  output [3:0] reg_out
 );
   
   reg [3:0] d;
