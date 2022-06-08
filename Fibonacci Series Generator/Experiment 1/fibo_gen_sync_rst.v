@@ -1,8 +1,8 @@
 // Design a 4-bit Fibonacci generator with synchronous reset in Verilog using an adder and two registers.
 // You can use simple assign statement to implement the adder.
 
-module fibo_gen (
-  input clk,reset,
+module fibo_gen_sync_rst(
+  input clk, reset,
   output reg [3:0] fibo_series
 );
   
