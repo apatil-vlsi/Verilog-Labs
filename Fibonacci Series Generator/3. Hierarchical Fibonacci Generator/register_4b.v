@@ -6,10 +6,10 @@ module register_4b(
   
   reg [3:0] d;
   
-  dff dff1 (.clk(clk), .reset(reset), .d(d[0]), .q(reg_out[0]));
-  dff dff2 (.clk(clk), .reset(reset), .d(d[1]), .q(reg_out[1]));
-  dff dff3 (.clk(clk), .reset(reset), .d(d[2]), .q(reg_out[2]));
-  dff dff4 (.clk(clk), .reset(reset), .d(d[3]), .q(reg_out[3]));
+  dff #(1'b1) dff1 (.clk(clk), .reset(reset), .d(d[0]), .q(reg_out[0]));
+  dff #(1'b0) dff2 (.clk(clk), .reset(reset), .d(d[1]), .q(reg_out[1]));
+  dff #(1'b0) dff3 (.clk(clk), .reset(reset), .d(d[2]), .q(reg_out[2]));
+  dff #(1'b0) dff4 (.clk(clk), .reset(reset), .d(d[3]), .q(reg_out[3]));
   
   always @ (posedge clk)
     if (clk)
