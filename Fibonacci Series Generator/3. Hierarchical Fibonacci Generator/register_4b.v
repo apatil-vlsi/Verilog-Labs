@@ -1,3 +1,5 @@
+`include "dff.v"
+
 module register_4b
   #(parameter [3:0] rst_value = 4'b0000)
   (
