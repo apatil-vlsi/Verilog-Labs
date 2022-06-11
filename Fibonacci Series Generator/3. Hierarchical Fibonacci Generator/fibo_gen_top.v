@@ -1,7 +1,11 @@
-module fibo_gen_top(
+`include "rcadder_4b.v"
+`include "register_4b.v"
+
+module fibo_gen_top
+  (
   input clk, reset,
   output [3:0] fibo_series
-);
+  );
 	
   wire cout;
   wire [3:0]  add_out;
