@@ -1,3 +1,5 @@
+`include "fibo_gen_top.v"
+
 module fibo_gen_top_tb ();
   
   reg clk, reset;
