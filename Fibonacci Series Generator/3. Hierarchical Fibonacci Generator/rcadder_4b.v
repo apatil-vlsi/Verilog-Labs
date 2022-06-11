@@ -1,3 +1,5 @@
+`include "full_adder.v"
+
 module rcadder_4b(
   input [3:0] a, b,
   output cout,
